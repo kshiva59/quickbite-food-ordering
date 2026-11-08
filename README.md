@@ -1,95 +1,97 @@
-# QuickBite — React Food Ordering Frontend
+# 🍔 QuickBite – React Food Ordering App
 
-A responsive food ordering frontend built with React 18 and Vite. It runs entirely in the browser and persists demo data in `localStorage`.
+QuickBite is a food ordering web application built with **React** and **Vite**. Users can browse menu items, add them to a cart and place orders through a clean, responsive interface.
 
-## Features
+## ✨ Features
 
-### Customer
-- Browse restaurant cards and filter by cuisine/category.
-- Search restaurants, cuisines and menu item names.
-- View restaurant menus and add dishes to the cart.
-- Change quantities, clear the cart and see an itemized bill.
-- Single-restaurant cart rule to avoid mixing orders from multiple restaurants.
-- Checkout with name, 10-digit mobile number and delivery address validation.
-- Place demo orders and view order history with status progress.
+- Browse food items by category
+- Add and remove items from the cart
+- Update item quantities with live total price
+- Responsive design for mobile, tablet and desktop
+- Fast development and build with Vite
 
-### Admin demo
-- Add and delete restaurants.
-- Add and delete menu items.
-- View basic dashboard statistics.
-- Update order statuses: Confirmed, Preparing, Out for delivery, Delivered or Cancelled.
+> Edit this list to match the features your project actually has.
 
-## Requirements
-- Node.js 18 or newer (Node.js 20 LTS recommended).
-- npm (included with Node.js).
-- Visual Studio Code.
+## 🛠️ Tech Stack
 
-## Run locally
+- **Frontend:** React, JavaScript (ES6+), HTML5, CSS3
+- **Build Tool:** Vite
+- **Package Manager:** npm
 
-1. Extract the ZIP file.
-2. Open the extracted `quickbite-food-ordering` folder in VS Code.
-3. Open **Terminal → New Terminal**.
-4. Check Node and npm:
+## 📁 Project Structure
+
+```
+quickbite-food-ordering/
+├── public/          # Static assets
+├── src/             # Components, pages, styles
+├── index.html       # Entry HTML file
+├── package.json     # Dependencies and scripts
+└── README.md
+```
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/) (LTS version)
+- npm (comes with Node.js)
+
+### Installation
+
+1. Clone the repository
+
    ```bash
-   node -v
-   npm -v
+   git clone https://github.com/kshiva59/quickbite-food-ordering.git
    ```
-5. Install dependencies:
+
+2. Go to the project folder
+
+   ```bash
+   cd quickbite-food-ordering
+   ```
+
+3. Install dependencies
+
    ```bash
    npm install
    ```
-6. Start the development server:
+
+4. Start the development server
+
    ```bash
    npm run dev
    ```
-7. Open the local URL printed by Vite, usually `http://localhost:5173`.
 
-To test the production build:
-```bash
-npm run build
-npm run preview
+5. Open the URL shown in the terminal (usually `http://localhost:5173`).
+
+## 📜 Available Scripts
+
+| Command           | Description                          |
+| ----------------- | ------------------------------------ |
+| `npm run dev`     | Starts the development server        |
+| `npm run build`   | Creates a production build           |
+| `npm run preview` | Previews the production build locally |
+
+## 📸 Screenshots
+
+Add screenshots of your app here:
+
+```
+![Home Page](./screenshots/home.png)
 ```
 
-## Push to GitHub
+## 🔮 Future Improvements
 
-Create an empty repository on GitHub, for example `quickbite-food-ordering`. Do not initialize it with a README if you plan to push this existing project.
+- User login and signup
+- Order history
+- Payment gateway integration
+- Backend API with database
 
-Run these commands in the VS Code terminal from the project root:
+## 🤝 Contributing
 
-```bash
-git init
-git add .
-git commit -m "Build QuickBite React food ordering frontend"
-git branch -M main
-git remote add origin https://github.com/YOUR-USERNAME/quickbite-food-ordering.git
-git push -u origin main
-```
+Contributions are welcome. Fork the repo, create a branch, commit your changes and open a pull request.
 
-Replace `YOUR-USERNAME` with your GitHub username. If Git asks you to sign in, complete the browser authentication flow.
+## 👤 Author
 
-For later changes:
-```bash
-git add .
-git commit -m "Describe your changes"
-git push
-```
-
-## Reset demo data
-
-The app saves restaurants, cart and orders in browser `localStorage`. To reset to the starter data, open browser Developer Tools → Application → Local Storage → your localhost origin and delete:
-- `qb-restaurants`
-- `qb-cart`
-- `qb-orders`
-
-Then refresh the page.
-
-## Important project notes
-
-- This is a **frontend-only demo**. It does not connect to a real backend, payment gateway, maps, SMS service or delivery partner.
-- The Admin page is a demonstration interface, not secure authentication. Anyone opening the app can use it.
-- Order status updates are controlled manually in the Admin page; they are not live courier tracking.
-- All data is stored in the current browser's local storage and is not shared between users or devices.
-- The Google Fonts import is optional; the app falls back to system fonts if unavailable.
-
-## Suggested next upgrade
-Connect this UI to a Spring Boot REST API with MySQL, Spring Security/JWT, real customer/admin roles, order persistence and payment integration.
+**K. Shiva**
+GitHub: [@kshiva59](https://github.com/kshiva59)
